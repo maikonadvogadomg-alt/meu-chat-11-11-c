@@ -1,0 +1,12 @@
+KIT DO MAIKON PARA O VS CODE
+
+Copie esta pasta "kit" para DENTRO da pasta do projeto.
+No terminal do VS Code (Terminal > Novo Terminal):
+
+  python kit/dividir.py index.html        -> cria a pasta index-modular (o original nao muda)
+  cd index-modular
+  npx serve                               -> abre o endereco que aparecer (Ctrl+clique)
+  cd ..
+  python kit/juntar.py index-modular      -> cria index-modular-UNICO.html (um arquivo so)
+
+O passo a passo completo esta no "Manual do VS Code para modularizar".
