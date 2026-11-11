@@ -1,0 +1,51 @@
+{
+  "name": "meu-chat-11-11-c-teste-11111521",
+  "version": "1.0.0",
+  "description": "Meu-Chat-11-11-C (teste 11111522)",
+  "author": "Maikon",
+  "private": true,
+  "main": "electron/main.cjs",
+  "portaDoPrograma": 7741,
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "com.maikonadvogadomgalt.meuchat1111c.nteste11111522.pc",
+    "productName": "Meu-Chat-11-11-C (teste 11111522)",
+    "executableName": "meu-chat-11-11-c-teste-11111522",
+    "directories": {
+      "output": "release"
+    },
+    "asar": false,
+    "files": [
+      "**/*",
+      "!android/**",
+      "!.github/**",
+      "!release/**",
+      "!exe/**",
+      "!node_modules/.cache/**",
+      "!*.zip",
+      "!.sk/**",
+      "!apk.config.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "icons/icon-512.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Meu-Chat-11-11-C (teste 11111522)",
+      "artifactName": "meu-chat-11-11-c-teste-11111522-Instalar.exe"
+    },
+    "portable": {
+      "artifactName": "meu-chat-11-11-c-teste-11111522-sem-instalar.exe"
+    }
+  }
+}
